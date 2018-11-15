@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.scantext.ilus.scantext.Tab2_settingsActivity"
+    android:background="@drawable/backgruop_general"
+    android:theme="@style/AppTheme.NoActionBar"
+    >
+
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/id_intrucciones2"
+        android:textSize="22dp"
+        android:textColor="@color/Text"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/cuadro_x"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/idTip"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idTip1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/idTip"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/idTip1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:text="@string/idTip1"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/cuadro_x"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:layout_above="@+id/idTip"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/cuadro_x"
+        android:layout_alignLeft="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_alignBottom="@+id/cuadro_x"
+        android:layout_alignStart="@+id/idTip1"
+        android:layout_marginBottom="25dp"
+        android:layout_alignLeft="@+id/idTip1">
+        <CheckBox
+            android:id="@+id/idCheckBox_Correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/checkbox1"
+            android:textColorLink="@android:color/white"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+
+        <CheckBox
+            android:id="@+id/idCheckBox_Direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox2"
+            android:textColorLink="@android:color/white"
+            android:checked="false"
+            android:layout_below="@id/idCheckBox_Correo"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+
+        <CheckBox
+            android:id="@+id/idCheckBox_Edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox3"
+            android:textColorLink="@android:color/white"
+            android:checked="false"
+            android:layout_below="@id/idCheckBox_Direccion"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+
+        <CheckBox
+            android:id="@+id/idCheckBox_Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox4"
+            android:textColorLink="@android:color/white"
+            android:checked="false"
+            android:layout_below="@id/idCheckBox_Edad"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:id="@+id/linearLayout2">
+
+        <CheckBox
+            android:id="@+id/idCheckBox_FConsulata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:checked="false"
+            android:text="@string/checkbox7"
+            android:textColor="#ffffff"
+            android:textColorLink="@android:color/white"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/idCheckBox_Sala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkbox5"
+            android:textColorLink="@android:color/white"
+            android:checked="false"
+            android:layout_below="@id/idCheckBox_Nombre"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+
+        <CheckBox
+            android:id="@+id/idCheckBox_Telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="false"
+            android:text="@string/checkbox6"
+            android:textColorLink="@android:color/white"
+            android:checked="false"
+            android:layout_below="@id/idCheckBox_Sala"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+
+        <CheckBox
+            android:id="@+id/idCheckBox_Todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/checkbox8"
+            android:textColorLink="@android:color/white"
+            android:layout_below="@id/idCheckBox_Telefono"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

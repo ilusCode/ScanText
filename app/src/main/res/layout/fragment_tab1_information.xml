@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgruop_general"
+    tools:context="com.scantext.ilus.scantext.Tab1_InformationActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msjBienvenida"
+        android:textSize="30dp"
+        android:id="@+id/msj1"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/Text"
+        android:layout_below="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/msj2"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/id_intrucciones"
+        android:textSize="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/msj1"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Text"/>
+
+    <TextView
+        android:id="@+id/msj3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/id_redes"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/Text"
+        android:layout_below="@+id/msj2"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/twitter_ico"
+        android:id="@+id/btnTwietter"
+        android:layout_alignBottom="@+id/btnPaginaWEP"
+        android:layout_alignEnd="@+id/msj2"
+        android:layout_alignTop="@+id/btnPaginaWEP"
+        tools:ignore="RtlCompat" />
+    <ImageButton
+
+        android:id="@+id/btnPaginaWEP"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/www_ico"
+        android:layout_below="@+id/msj3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+
+        />
+    <ImageButton
+
+        android:id="@+id/btnFacebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/facebook_ico"
+        android:layout_alignBottom="@+id/btnPaginaWEP"
+        android:layout_alignStart="@+id/msj2"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>

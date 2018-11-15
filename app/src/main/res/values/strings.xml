@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ScanText</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="id_intrucciones">Esta aplicación te permite capturar escritos con tu cámara y busca los datos que están en la parte de ajustes</string>
+    <string name="id_intrucciones2">Selecciones una o varias opciones:</string>
+    <string name="checkbox1">Correo</string>
+    <string name="checkbox2">Dirección</string>
+    <string name="checkbox3">Edad</string>
+    <string name="checkbox4">Nombre</string>
+    <string name="checkbox5">Sala</string>
+    <string name="checkbox6">Telefono</string>
+    <string name="checkbox7">Fecha de consulta</string>
+    <string name="checkbox8">Todo</string>
+    <string name="msjBienvenida">!! Bienvenido ¡¡</string>
+    <string name="id_redes">Redes</string>
+    <string name="idTip">TIP</string>
+    <string name="idTip1">Puedes seleccionar mas de una si quieres tablas, en caso que no selecciones ninguna se pasara toda la informacion a un .txt</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="idBtnSave">Guardar</string>
+    <string name="idcompartir">Compartir</string>
+
+    <string name="bntCompartir">Compartir</string>
+</resources>
